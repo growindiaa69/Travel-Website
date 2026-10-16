@@ -196,7 +196,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <!-- AEO FIX -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -219,193 +219,70 @@
       ]
     },
     {
+      "@type": "TravelAgency",
+      "@id": "https://growindiaa69.github.io/Travel-website/#organization",
+      "name": "Tourguide",
+      "url": "https://growindiaa69.github.io/Travel-website/",
+      "logo": "https://growindiaa69.github.io/Travel-website/img/tour1.png",
+      "telephone": "+916305400048",
+      "email": "chaitanyatechtrueview@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN",
+        "streetAddress": "UAE",
+        "addressLocality": "Dubai",
+        "addressRegion": "Executive Tower C",
+        "postalCode": "17"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/arpan-chowdhury-775294251/",
+        "https://x.com/ArpanCh40193288",
+        "https://www.instagram.com/anuragbasu1973/",
+        "https://www.youtube.com/@arpanchowdhury53",
+        "https://github.com/apu52",
+        "https://maps.app.goo.gl/4ULWYJxSVD8AcUin6",
+        "https://maps.app.goo.gl/zrA5UgDQoeUtRhhn7",
+        "https://maps.app.goo.gl/eTfvw4peKN3AcMUy8",
+        "https://maps.app.goo.gl/tBZLQcZbCHRWsgGX7",
+        "https://maps.app.goo.gl/8Y3rnjtxU563KVvE9",
+        "https://maps.app.goo.gl/cj2UZZoyCTzeoQjEA",
+        "https://maps.app.goo.gl/Gk1fQts4zeVRdAWu6",
+        "https://maps.app.goo.gl/DbWvrFgfwwwTWuBT8",
+        "https://maps.app.goo.gl/gBGuxUNXXemiZ2Td8",
+        "https://maps.app.goo.gl/tQ4BT4gDoFtauReM9",
+        "https://maps.app.goo.gl/oqDnmF2pCqRxV5Cp6",
+        "https://maps.app.goo.gl/pHjaA4aqP41JxdAh9",
+        "https://maps.app.goo.gl/84rV6GhhginGXgbc8",
+        "https://maps.app.goo.gl/GzVALHoLp4MgFmgw5"
+      ]
+    },
+    {
       "@type": "WebPage",
       "@id": "https://growindiaa69.github.io/Travel-website/hotel.html#webpage",
       "url": "https://growindiaa69.github.io/Travel-website/hotel.html",
-      "name": "Growindiaa69",
-      "description": "Growindiaa69 - Growindiaa69",
+      "name": "Hotel",
+      "description": "Hotel provided by Tourguide.",
       "isPartOf": {
         "@id": "https://growindiaa69.github.io/Travel-website/#website"
       },
       "about": {
-        "@id": "https://growindiaa69.github.io/Travel-website/#restaurant"
+        "@id": "https://growindiaa69.github.io/Travel-website/#organization"
       },
       "breadcrumb": {
         "@id": "https://growindiaa69.github.io/Travel-website/hotel.html#breadcrumb"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://growindiaa69.github.io/Travel-website/#website",
+      "url": "https://growindiaa69.github.io/Travel-website/",
+      "name": "Tourguide",
+      "publisher": {
+        "@id": "https://growindiaa69.github.io/Travel-website/#organization"
       }
     }
   ]
 }
 </script>
-  </head>
-  <body>
-    <a href="index.html" class="home-button">Home</a>
-    <div class="container">
-      <h2>Hotel Booking Form</h2>
-      <form
-        id="feedback-form"
-        action="#"
-        method="post"
-        onsubmit="submitFeedback(event)"
-      >
-        <div class="flex-container">
-          <div class="flex-item">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your first name.."
-              required
-            />
-          </div>
-          <div class="flex-item">
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Your last name.."
-              required
-            />
-          </div>
-        </div>
-
-        <div class="flex-container">
-          <div class="flex-item">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email.."
-              required
-            />
-          </div>
-          <div class="flex-item">
-            <label for="phone">Phone Number</label>
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              placeholder="Your phone number.."
-              required
-            />
-          </div>
-        </div>
-        <div class="flex-container">
-          <div class="flex-item">
-            <label for="checkin">Check-in Date</label>
-            <input type="date" id="checkin" name="checkin" required />
-          </div>
-          <div class="flex-item">
-            <label for="checkout">Check-out Date</label>
-            <input type="date" id="checkout" name="checkout" required />
-          </div>
-        </div>
-
-        <div class="flex-container">
-          <div class="flex-item">
-            <label for="adults">Number of Adults</label>
-            <input
-              type="number"
-              id="adults"
-              name="adults"
-              min="1"
-              max="10"
-              required
-            />
-          </div>
-          <div class="flex-item">
-            <label for="children">Number of Children</label>
-            <input
-              type="number"
-              id="children"
-              name="children"
-              min="0"
-              max="10"
-            />
-          </div>
-        </div>
-
-        <label for="room">Room Type</label>
-        <select id="room" name="room" required>
-          <option value="single">Single Room</option>
-          <option value="double">Double Room</option>
-          <option value="suite">Suite</option>
-        </select>
-
-        <label for="special-requests">Special Requests</label>
-        <textarea
-          id="special-requests"
-          name="special_requests"
-          placeholder="Any special requests.."
-          style="height: 100px"
-        ></textarea>
-        <input type="submit" class="btn-book" value="Book Now" />
-      </form>
-    </div>
-    <script>
-      function submitFeedback(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Get form elements
-        var fname = document.getElementById("fname").value.trim();
-        var lname = document.getElementById("lname").value.trim();
-        var email = document.getElementById("email").value.trim();
-        var phone = document.getElementById("phone").value.trim();
-        var checkin = document.getElementById("checkin").value;
-        var checkout = document.getElementById("checkout").value;
-        var adults = document.getElementById("adults").value;
-        var children = document.getElementById("children").value;
-        var room = document.getElementById("room").value;
-        var specialRequests = document
-          .getElementById("special-requests")
-          .value.trim();
-
-        // Check if the form is completely filled
-        if (
-          !fname ||
-          !lname ||
-          !email ||
-          !phone ||
-          !checkin ||
-          !checkout ||
-          !adults ||
-          !room
-        ) {
-          Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "Please fill in all required fields before submitting.",
-            customClass: {
-              popup: "swal-popup",
-              title: "swal-title",
-              content: "swal-content",
-              confirmButton: "swal-confirm-button",
-            },
-          });
-          return; // Exit the function if any required field is empty
-        }
-
-        // Show a success message
-        Swal.fire({
-          icon: "success",
-          title: "Success!",
-          text: "Your booking request has been submitted.",
-          customClass: {
-            popup: "swal-popup",
-            title: "swal-title",
-            content: "swal-content",
-            confirmButton: "swal-confirm-button",
-          },
-        }).then((result) => {
-          // Clear the booking form after the user acknowledges the success modal
-          if (result.isConfirmed || result.isDismissed) {
-            document.getElementById("feedback-form").reset();
-          }
-        });
-      }
-    </script>
   </body>
 </html>
