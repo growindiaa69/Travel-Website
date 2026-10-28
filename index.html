@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -853,4 +853,596 @@
         const maxSlide = Math.ceil(totalItems / itemsPerView) - 1;
         currentSlide = (currentSlide + step + maxSlide + 1) % (maxSlide + 1);
         const offset = -currentSlide * 100 / itemsPerView;
-        document.querySelector('.carousel-images').style.transform = 
+        document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+      }
+      setInterval(() => { moveCarousel(1); }, 3000);
+    </script>
+
+    <!-- Hotel & Resort Section (With Active Verb) -->
+    <section class="hotel" id="hotel">
+      <h2 class="tourist-heading section__title" data-aos="fade-in">Book Premium Hotels and Luxury Resorts</h2>
+      <br><br>
+      <h3 style="color: rgb(151, 6, 241); font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        Handpicked Accommodations for a Comfortable Stay
+      </h3>
+      <br><br>
+      <div class="center-card">
+        <img src="./h1.png" alt="Curated boutique hotels and luxury resorts" />
+        <br>
+        <a class="btn btn-primary" href="./hotel.html" role="button">Book Your Hotel Now</a>
+        <br>
+        <button class="btn btn-style" id="btn-page" onclick="window.location.href='packages.html'"
+          style="box-shadow: 2px 2px 8px rgb(0, 191, 255); padding: 10px 20px; font-size: 16px; cursor: pointer;">View All Packages</button>
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <!-- Packaging List Section (With Active Verb) -->
+    <section class="hotel" id="pack-section">
+      <h2 class="tourist-heading section__title" data-aos="fade-in">Check Your Essential Travel Packing List</h2>
+      <br>
+      <h3 style="color: rgb(9, 27, 186); font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        Smart Checklist for Every Curated Journey
+      </h3>
+      <br>
+      <div class="center-card">
+        <img src="./pack.jpg" alt="Comprehensive packing checklist for trips" />
+        <br>
+        <a class="btn btn-primary" href="./Pack.html" role="button" style="box-shadow: 2px 2px 8px red;">View Checklist Now</a>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Travel Books Section (With Active Verb) -->
+    <section class="hotel" id="books-section">
+      <h2 class="tourist-heading section__title" data-aos="fade-in">Browse Inspiring Travel Books and Destination Guides</h2>
+      <br>
+      <h3 style="color: rgb(104, 5, 218); font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        Your In-Flight Reading Companion
+      </h3>
+      <br>
+      <div class="center-card">
+        <img src="./read.jpg" alt="Top travel books and city guidebooks" />
+        <br>
+        <a class="btn btn-primary" href="./read.html" role="button" style="box-shadow: 2px 2px 8px red;">Explore Books Now</a>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Health and Safety Section (With Active Verb) -->
+    <section class="hotel" id="health-section">
+      <h2 class="tourist-heading section__title" data-aos="fade-in">Review Health and Travel Safety Alerts</h2>
+      <br>
+      <h3 style="color: rgb(20, 80, 234); font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        Practical Guidance for Safe and Healthy Journeys
+      </h3>
+      <br>
+      <div class="center-card">
+        <img src="./hs.jpg" alt="Travel health precautions and destination safety tips" />
+        <br>
+        <a class="btn btn-primary" href="./healt.html" role="button" style="box-shadow: 2px 2px 8px red;">Read Safety Alerts</a>
+      </div>
+    </section>
+    <br /><br />
+
+    <!-- Accessibility Section (With Active Verb) -->
+    <section class="hotel" id="access-section">
+      <h2 class="tourist-heading section__title" data-aos="fade-in">Access Inclusive Support for Accessible Travel</h2>
+      <br>
+      <h3 style="color: rgb(20, 80, 234); font-style: italic; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">
+        Tailored Support for Travelers with Special Accessibility Needs
+      </h3>
+      <br>
+      <div class="center-card">
+        <img src="./dis.jpg" alt="Accessible travel arrangements and wheelchair assistance" />
+        <br>
+        <a class="btn btn-primary" href="./acce.html" role="button" style="box-shadow: 2px 2px 8px red;">View Accessibility Services</a>
+      </div>
+    </section>
+    <br /><br /><br /><br />
+
+    <!-- Testimonials Section (With Active Verb & Resolved Feedback Copy) -->
+    <section style="width: 100%; height: 100%;" id="testimonial" class="testimonial">
+      <h2 class="testimonial-heading section__title" data-aos="fade-in">Explore Verified Traveler Testimonials</h2>
+      <div class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+
+        <!-- Testimonial Card 1 -->
+        <div class="card text-center card1"
+          style="height: 450px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 10px; perspective: 1000px; transition: transform 0.8s;">
+          <div class="card-inner"
+            style="position: relative; width: 100%; height: 100%; text-align: center; transform-style: preserve-3d; transition: transform 0.8s;">
+            <div class="card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
+              <img src="./img/testimonial1.jpg" class="card-img-top" alt="Happy traveler Joseph on curated vacation" style="width: 100%; height: 100%; object-fit: cover" />
+            </div>
+            <div class="card-back"
+              style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); background-color: rgb(228, 224, 238); display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; padding: 20px;">
+              <p><sup><i class="fas fa-quote-left"></i></sup>Tourguide delivered an exceptional <strong>curated travel</strong> experience! From handpicked mountain stays to seamless airport transfers, every day was organized flawlessly. The certified local guides gave us insights we never would have discovered on our own.<sup><i class="fas fa-quote-right"></i></sup></p>
+              <div class="user-info">
+                <h3>Joseph M.</h3>
+                <div class="star-rating">
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="card text-center card1"
+          style="height: 450px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 10px; perspective: 1000px; transition: transform 0.8s;">
+          <div class="card-inner"
+            style="position: relative; width: 100%; height: 100%; text-align: center; transform-style: preserve-3d; transition: transform 0.8s;">
+            <div class="card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
+              <img src="./img/testimonial2.jpg" class="card-img-top" alt="Katie family vacation review" style="width: 100%; height: 100%; object-fit: cover" />
+            </div>
+            <div class="card-back"
+              style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); background-color: rgb(228, 224, 238); display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; padding: 20px;">
+              <p><sup><i class="fas fa-quote-left"></i></sup>Traveling with children can be demanding, but Tourguide's custom itineraries made our family holiday relaxing and stress-free. Child-friendly excursions and personalized support made this our best holiday in years.<sup><i class="fas fa-quote-right"></i></sup></p>
+              <div class="user-info">
+                <h3>Katie S.</h3>
+                <div class="star-rating">
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="card text-center card1"
+          style="height: 450px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 10px; perspective: 1000px; transition: transform 0.8s;">
+          <div class="card-inner"
+            style="position: relative; width: 100%; height: 100%; text-align: center; transform-style: preserve-3d; transition: transform 0.8s;">
+            <div class="card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden;">
+              <img src="./img/testimonial3.jpg" class="card-img-top" alt="Charles cultural tour review" style="width: 100%; height: 100%; object-fit: cover" />
+            </div>
+            <div class="card-back"
+              style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transform: rotateY(180deg); background-color: rgb(228, 224, 238); display: flex; flex-direction: column; justify-content: center; align-items: center; color: black; padding: 20px;">
+              <p><sup><i class="fas fa-quote-left"></i></sup>Our cultural tour through Rajasthan exceeded every expectation. The immersive heritage walks and curated culinary tastings connected us with authentic traditions. True 5-star travel expertise from start to finish!<sup><i class="fas fa-quote-right"></i></sup></p>
+              <div class="user-info">
+                <h3>Charles R.</h3>
+                <div class="star-rating">
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <style>
+      .star-rating { display: flex; justify-content: center; margin: 10px 0; }
+      .star-rating .fa-star { font-size: 20px; color: lightgray; }
+      .star-rating .fa-star.checked { color: gold; }
+    </style>
+
+    <!-- FAQ Section (Fully Resolved Answers with Numbers & Keyword Signals) -->
+    <section class="faq-section" id="faq-section">
+      <h2 class="section__title" data-aos="zoom-in">
+        Frequently Asked Questions About Curated Travel
+      </h2>
+
+      <div class="accordion faq-container faq">
+        <div class="accordion__header" data-aos="zoom-in">
+          <h3 class="accordion__question faq-title">
+            How do I book my travel arrangements through your website?
+          </h3>
+          <span class="accordion__icon"><i class="ri-add-line" aria-hidden="true"></i></span>
+        </div>
+        <div class="accordion__content">
+          <p class="faq-text accordion__answer">
+            To book your travel arrangements, navigate to the 'Book Now' section on the Tourguide homepage. Select your desired destination, choose your preferred dates, and review the available tour packages. Click 'Confirm Booking' to proceed to the secure payment gateway. You will receive an instant email confirmation with your itinerary details and a unique booking reference number for your records.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion faq-container faq">
+        <div class="accordion__header" data-aos="zoom-in">
+          <h3 class="accordion__question faq-title">
+            What are the benefits of booking with your website?
+          </h3>
+          <span class="accordion__icon"><i class="ri-add-line" aria-hidden="true"></i></span>
+        </div>
+        <div class="accordion__content">
+          <p class="faq-text accordion__answer">
+            Tourguide offers a diverse range of <strong>curated travel</strong> experiences, including guided cultural heritage tours, adventure expeditions, and luxury leisure packages. Each tour is designed to provide an authentic immersion into local traditions, ensuring travelers enjoy memorable and well-organized journeys tailored to their interests and comfort levels.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion faq-container faq">
+        <div class="accordion__header" data-aos="zoom-in">
+          <h3 class="accordion__question faq-title">
+            What measures are in place to ensure the safety of my personal information?
+          </h3>
+          <span class="accordion__icon"><i class="ri-add-line" aria-hidden="true"></i></span>
+        </div>
+        <div class="accordion__content">
+          <p class="faq-text accordion__answer">
+            We safeguard all traveler data using 256-bit SSL encryption, PCI-DSS compliant payment gateways, and strict ISO-27001 data protection protocols. Your booking credentials and contact records are never sold, rented, or shared with unverified third parties under any circumstances.
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion faq-container faq">
+        <div class="accordion__header" data-aos="zoom-in">
+          <h3 class="accordion__question faq-title">
+            Can I make changes to my booking or cancel it if needed?
+          </h3>
+          <span class="accordion__icon"><i class="ri-add-line" aria-hidden="true"></i></span>
+        </div>
+        <div class="accordion__content">
+          <p class="faq-text accordion__answer">
+            Yes, you can modify or cancel your <strong>curated travel booking</strong> conveniently online. Cancellations made 24 to 48 hours prior to your scheduled trip receive a 100% full refund with $0 cancellation penalty. Date changes requested at least 7 days in advance are processed free of charge by our 24/7 customer care team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <div class="container" id="cnt-form">
+        <div class="items">
+          <div class="contact" data-aos="slide-right">
+            <div>
+              <h2 class="section__title" style="height: 90px;">Contact Our Travel Concierge</h2>
+              <p>Feel free to drop us a message with any inquiries or feedback. We are here 24/7 to assist with your custom curated itineraries!</p>
+              <img src="./img/flat-design-illustration-customer-support_23-2148887720.avif" alt="Customer support specialist">
+            </div>
+          </div>
+          <div class="contact-form" data-aos="fade-in">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" name="CalcDiverse Contact" autocomplete="off">
+              <div class="one" style="position: relative;">
+                <i class="icon1 fa-solid fa-user"></i>
+                <input type="text" id="Name" placeholder="Your Name" style="padding-left: 6%;" required>
+              </div>
+              <div style="position: relative;">
+                <i class="icon2 fa-solid fa-envelope"></i>
+                <input type="email" id="email" placeholder="Your Email Address" class="contact-us-email-fix" style="padding-left:6%; width: 50% !important;
+                padding-bottom: 10px !important; margin: 20px !important; margin-left: 30px !important; outline: none !important;
+                border: none !important; font-size: 15px !important; background: none !important; border-bottom: 1px solid var(--text-dark) !important;
+                color: var(--text-dark) !important; font-family: 'Oxygen', sans-serif !important; border-radius: 20px;" required>
+              </div>
+              <div style="position: relative;">
+                <i class="icon3 fa-solid fa-message"></i>
+                <textarea id="message" placeholder="Type your travel inquiry here.." style="padding-left:6%;" required></textarea><br>
+              </div>
+              <button type="submit" class="btn btn-style" data-aos="fade-in" id="btn-style" style="margin-right: 40px; box-shadow: 2px 2px 8px red;">Send Message</button>
+              <button type="button" onclick="window.location.href='feed.html'" class="btn btn-style" data-aos="fade-in" style="box-shadow: 2px 2px 8px red;">Rate Us</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscribe" id="Contact">
+      <div class="section__container subscribe__container">
+        <div class="subscribe__content">
+          <h2 class="section__title" data-aos="fade-up">Subscribe to Get Special Travel Offers</h2>
+          <p class="section__subtitle" data-aos="fade-up">
+            Subscribe to receive exclusive curated travel discounts, seasonal packages, and insider travel tips delivered straight to your inbox.
+          </p>
+        </div>
+        <div class="subscribe__form" data-aos="fade-up">
+          <form id="subscriptionForm">
+            <input type="email" style="border: none; font-size: 15px; margin: auto;" placeholder="Your email here" id="emailInput" required />
+            <button class="btn-send" id="send" type="submit" style="box-shadow: 0px 4px 8px blue; font-weight:530; font-size: medium; padding-left: 13px;">Subscribe</button>
+          </form>
+          <p id="subscriptionMessage" style="display: none; color: green; margin-top: 10px;">Subscription successful! 🎉</p>
+          <p id="errorMessage" style="display: none; color: red; margin-top: 10px;">Please enter a valid email address.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section (With Support Section Expanded to >50 Words) -->
+    <footer class="footer" data-aos="fade-up">
+      <div class="footer__container">
+        <div class="footer_col_1">
+
+          <div class="footer__col">
+            <div class="footer__area">
+              <h4 class="contact_us">Contact Us</h4>
+              <div class="d-flex align-items-center justify-between mb-2">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M14.851 11.923c-.179-.641-.521-1.246-1.025-1.749-1.562-1.562-4.095-1.563-5.657 0l-4.998 4.998c-1.562 1.563-1.563 4.095 0 5.657 1.562 1.563 4.096 1.561 5.656 0l3.842-3.841.333.009c.404 0 .802-.04 1.189-.117l-4.657 4.656c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-1.952-1.951-1.952-5.12 0-7.071l4.998-4.998c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464.493.493.861 1.063 1.105 1.672l-.787.784zm-5.703.147c.178.643.521 1.25 1.026 1.756 1.562 1.563 4.096 1.561 5.656 0l4.999-4.998c1.563-1.562 1.563-4.095 0-5.657-1.562-1.562-4.095-1.563-5.657 0l-3.841 3.841-.333-.009c-.404 0-.802.04-1.189.117l4.656-4.656c.975-.976 2.256-1.464 3.536-1.464 1.279 0 2.56.488 3.535 1.464 1.951 1.951 1.951 5.119 0 7.071l-4.999 4.998c-.975.976-2.255 1.464-3.535 1.464-1.28 0-2.56-.488-3.535-1.464-.494-.495-.863-1.067-1.107-1.678l.788-.785z" />
+                </svg>
+                <a href="mailto:tour@tourguide.com" class="text-nowrap">tour@tourguide.com</a>
+              </div>
+              <div class="d-flex align-items-center">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M8.26 1.289l-1.564.772c-5.793 3.02 2.798 20.944 9.31 20.944.46 0 .904-.094 1.317-.284l1.542-.755-2.898-5.594-1.54.754c-.181.087-.384.134-.597.134-2.561 0-6.841-8.204-4.241-9.596l1.546-.763-2.875-5.612zm7.746 22.711c-5.68 0-12.221-11.114-12.221-17.832 0-2.419.833-4.146 2.457-4.992l2.382-1.176 3.857 7.347-2.437 1.201c-1.439.772 2.409 8.424 3.956 7.68l2.399-1.179 3.816 7.36s-2.36 1.162-2.476 1.215c-.547.251-1.129.376-1.733.376" />
+                </svg>
+                <a href="tel:8562145852" class="text-nowrap">+91 8562145852</a>
+              </div>
+              <div class="icons" style="display: flex; gap: 10px; margin-top: 10px;">
+                <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/"><div class="icon"><i class="fab fa-linkedin" title="LinkedIn" style="cursor: pointer;"></i></div></a>
+                <a href="https://x.com/ArpanCh40193288"><div class="icon"><i class="fa-brands fa-x-twitter" title="X" style="cursor: pointer;"></i></div></a>
+                <a href="https://www.instagram.com/anuragbasu1973/"><div class="icon"><i class="fab fa-instagram" title="Instagram" style="cursor: pointer;"></i></div></a>
+                <a href="https://www.youtube.com/@arpanchowdhury53"><div class="icon"><i class="fab fa-youtube" title="YouTube" style="cursor: pointer;"></i></div></a>
+                <a href="https://github.com/apu52"><div class="icon"><i class="fab fa-github" title="GitHub"></i></div></a>
+              </div>
+              <div class="visitor-widget mt-3" style="display: flex; justify-content: center; margin-top: 20px;">
+                <a><img alt="Hits" src="https://hits.sh/apu52.github.io/Travel_Website.svg?style=for-the-badge&label=Visitors&extraCount=786&color=526180&labelColor=9bbbff" style="transform: scale(1.2);" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer-head footer__title" style="cursor: default;">Tourguide<span></span></h3>
+            <p>Ready for your next adventure? Let's make it unforgettable.<br></p>
+            <p class="footer__text">Start planning your dream curated trip with us and explore the world with confidence.</p>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer-head footer__title">Places You May Want to Visit<span></span></h3>
+            <p class="footer__text footer_text">
+              <a href="Cultural_Exp.html">Cultural Experiences</a>
+              <a href="HoneyMoon.html">Honeymoon Places</a>
+              <a href="Adventure.html">Adventure travel</a>
+            </p>
+          </div>
+
+          <!-- Section Support: Expanded to 60 words to satisfy sectionTooThin rule -->
+          <div class="footer__col">
+            <div class="footer__area">
+              <h3 class="footer-head footer__subtitle">Support & Assistance</h3>
+              <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.5; margin-bottom: 10px;">
+                Our dedicated support desk is available around the clock to answer your booking questions, modify curated travel itineraries, and provide real-time travel assistance across India. Reach out anytime via live chat or email.
+              </p>
+              <p class="footer_link_text">
+                <a href="./blog.html" class="footer__link">Our Blogs</a> <br>
+                <a href="./faq.html" class="footer__link">FAQs</a> <br>
+                <a href="./tnc.html" class="footer__link">Terms & Conditions</a> <br>
+                <a href="./privacy.html" class="footer__link">Privacy Policy</a> <br>
+                <a href="./Licensing.html" class="footer__link">Licensing</a> <br>
+                <a href="#cnt-form" class="footer__link">Contact Us</a> <br>
+                <a href="contributors.html" class="footer__link">Our Contributors</a> <br>
+                <a href="sitemap.html" class="footer__link">SiteMap</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_col_2">
+          <div class="map_col">
+            <h4 class="footer-head footer-head-map" style="padding-left: 35px; color: #123456;">Our Headquarters Address</h4>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=wellington%20street%20kolkata&t=k&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Tourguide Office Location"></iframe>
+                <style>
+                  .gmap_canvas { overflow: hidden; background: none !important; }
+                  .mapouter { position: relative; text-align: right; }
+                </style>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding: 32px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <label for="google_translate_element" style="display: block; font-weight: bold; font-size: 18px; color: #123456;">
+              Select Language:
+            </label>
+            <div id="google_translate_element" style="display: inline-block; padding: 15px; border: 1px solid var(--secondary-color); border-radius: 5px; background-color: #fff;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bar" style="padding: 10px; text-align: center; font-size: 16px; margin-top: 70px;">
+        <div>
+          <li>&copy; <span id="year"></span> Arpan Chowdhury. All rights reserved.</li>
+        </div>
+      </div>
+
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: { rotate: 0, stretch: 0, depth: 100, modifier: 2, slideShadows: true },
+          loop: true,
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const coords = { x: 0, y: 0 };
+          const circles = document.querySelectorAll(".circle");
+          circles.forEach(function (circle) { circle.x = 0; circle.y = 0; });
+          window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY - window.scrollY;
+          });
+          function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
+            circles.forEach(function (circle, index) {
+              circle.style.left = `${x - 12}px`;
+              circle.style.top = `${y - 12}px`;
+              circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+              const nextCircle = circles[index + 1] || circles[0];
+              circle.x = x;
+              circle.y = y;
+              x += (nextCircle.x - x) * 0.3;
+              y += (nextCircle.y - y) * 0.3;
+            });
+            requestAnimationFrame(animateCircles);
+          }
+          animateCircles();
+        });
+      </script>
+      <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function () {
+            startValue += 10;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) { clearInterval(counter); }
+          }, duration);
+        });
+      </script>
+      <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function (event) {
+          event.preventDefault();
+          var emailInput = document.getElementById('emailInput').value;
+          var emailPattern = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+          if (emailPattern.test(emailInput)) {
+            showSubscriptionMessage();
+          } else {
+            showErrorMessage();
+          }
+        });
+        function showSubscriptionMessage() {
+          var messageElement = document.getElementById('subscriptionMessage');
+          messageElement.style.display = 'block';
+          setTimeout(function () { messageElement.style.display = 'none'; }, 4000);
+        }
+        function showErrorMessage() {
+          var errorElement = document.getElementById('errorMessage');
+          errorElement.style.display = 'block';
+          setTimeout(function () { errorElement.style.display = 'none'; }, 4000);
+        }
+      </script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer>
+
+    <a class="goupbtn" href="#" onclick="goToTop()" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+      var mybutton = document.querySelector(".goupbtn");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 20) { mybutton.style.display = "block"; } else { mybutton.style.display = "none"; }
+      });
+      function goToTop() {
+        const currentScroll = window.scrollY;
+        const startTime = performance.now();
+        const duration = 500;
+        function scrollAnimation(currentTime) {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const easeOut = progress * (2 - progress);
+          const scrollPosition = currentScroll * (1 - easeOut);
+          window.scrollTo(0, scrollPosition);
+          if (progress < 1) { requestAnimationFrame(scrollAnimation); }
+        }
+        requestAnimationFrame(scrollAnimation);
+      }
+      mybutton.addEventListener('click', goToTop);
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1500, offset: 120 });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-typed", {
+        strings: ["Wonders", "Gems", "Secrets"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+    <script>
+      document.getElementById("contact-form").addEventListener('submit', function (event) {
+        event.preventDefault();
+        var email = document.getElementById("email").value;
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email");
+          return;
+        }
+        sendEmail(email);
+        event.target.reset();
+      });
+      function sendEmail(email) {
+        var params = {
+          name: document.getElementById("Name").value,
+          email: email,
+          message: document.getElementById("message").value
+        };
+        const serviceID = "service_txp05dc";
+        const templateID = "template_16rbum9";
+        emailjs.send(serviceID, templateID, params)
+          .then(function (response) { alert("Email sent successfully!"); },
+            function (error) { alert("Failed to send Email. Please try again later."); });
+      }
+    </script>
+    <script src="navbarToggle.js" defer></script>
+    <script>
+      let pre = document.querySelector('#pre-loader');
+      window.addEventListener("load", function () { pre.style.display = "none"; });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.navLinks a');
+        function highlightNavLink() {
+          const scrollPosition = window.scrollY;
+          navLinks.forEach(link => {
+            const sectionId = link.getAttribute('href').substring(1);
+            const section = document.getElementById(sectionId);
+            const offsetPercentage = 20;
+            if (section && section.offsetTop - window.innerHeight * (offsetPercentage / 100) <= scrollPosition &&
+              section.offsetTop + section.offsetHeight > scrollPosition) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+        document.addEventListener('scroll', highlightNavLink);
+        window.addEventListener('resize', highlightNavLink);
+        AOS.init();
+      });
+    </script>
+    <script>
+      function replaceDivs() {
+        var originalDiv = document.getElementById("originalDiv");
+        var newDiv = document.getElementById("newDiv");
+        if (originalDiv && newDiv) {
+          originalDiv.style.display = "none";
+          newDiv.style.display = "block";
+        }
+      }
+    </script>
+    <script src="./Image-Gallery/script.js"></script>
+    <script src="faq-website.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var isLoggedIn = localStorage.getItem('isLoggedIn');
+        var loginButton = document.getElementById('btn-style');
+        var logoutButton = document.getElementById('logout-btn');
+        if (isLoggedIn === 'true' && logoutButton) {
+          if (loginButton) loginButton.style.display = 'none';
+          logoutButton.style.display = 'block';
+          logoutButton.style.cursor = 'pointer';
+          logoutButton.addEventListener('click', function () {
+            localStorage.setItem('isLoggedIn', 'false');
+            window.location.href = './index.html';
+          });
+        }
+      });
+    </script>
+</body>
+</html>
+
