@@ -1,0 +1,30 @@
+# Tourguide – Curated Travel Experiences
+
+> Your premier travel companion for handpicked destinations, authentic cultural experiences, and personalized holiday packages across India.
+
+## Brand Overview
+Tourguide is a premier travel agency specializing in **Curated Travel** across India. We combine certified local tour guide expertise with handpicked boutique accommodations, tailored itineraries, and 24/7 dedicated customer assistance. Whether you are seeking cultural heritage explorations, romantic honeymoon getaways, or thrilling outdoor adventures, Tourguide provides verified, seamless travel experiences.
+
+## Core Travel Services
+- **Curated Travel Packages**: Handcrafted holiday packages with upfront pricing and transparent booking.
+- **Certified Local Tourist Guides**: Knowledgeable guides offering immersive cultural insights.
+- **Boutique Accommodations**: Handpicked luxury hotels and premium heritage resorts.
+- **Flexible Booking Policy**: Easy modifications and 100% full refunds for cancellations made 24-48 hours in advance.
+
+## Key Pages & Direct Links
+- **Homepage**: https://growindiaa69.github.io/Travel-Website/index.html
+- **Best Trip Packages**: https://growindiaa69.github.io/Travel-Website/packages.html
+- **Plan a Custom Trip**: https://growindiaa69.github.io/Travel-Website/plantrip.html
+- **Top Deals & Offers**: https://growindiaa69.github.io/Travel-Website/topdeals/topdeals.html
+- **About Us**: https://growindiaa69.github.io/Travel-Website/about.html
+- **Frequently Asked Questions (FAQ)**: https://growindiaa69.github.io/Travel-Website/faq.html
+- **Interactive Tourism Map**: https://growindiaa69.github.io/Travel-Website/mapa.html
+- **Privacy Policy**: https://growindiaa69.github.io/Travel-Website/privacy.html
+- **Terms & Conditions**: https://growindiaa69.github.io/Travel-Website/tnc.html
+
+## Contact & Customer Support
+- **Official Website**: https://growindiaa69.github.io/Travel-Website/
+- **Email**: tour@tourguide.com
+- **Phone**: +91 8562145852
+- **Headquarters**: Wellington Street, Kolkata, West Bengal 700012, India
+- **Support Availability**: 24/7 Dedicated Assistance
