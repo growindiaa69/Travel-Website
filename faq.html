@@ -312,37 +312,22 @@
   <meta property="article:published_time" content="2026-10-30T10:00:00Z">
   <meta property="article:modified_time" content="2026-10-30T13:30:00Z">
 
-  <link rel="canonical" href="https://growindiaa69.github.io/Travel-Website/faq">
+  <link rel="canonical" href="https://growindiaa69.github.io/Travel-Website/faq.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preload" href="style.css" as="style">
+  <style>@font-face { font-family: inherit; font-display: swap; }</style>
 </head>
   
   
   <body style="background-color: var(--secondary-color);">
-    <div id="progress-container">
+    <main id="main-content" role="main"><div id="progress-container">
       <div id="progress-bar"></div>
-    </div>
-    <script>
-          
-      window.addEventListener('scroll', function() {
-          const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-          const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-          const scrolled = (winScroll / height) * 100;
-          document.getElementById('progress-bar').style.width = scrolled + '%';
-      });
-      </script>
-    
-
-        <!-- Aeo fix keyword issue  -->
-        <h1>Tourguide</h1>
-
-
-
-      <div class="circle-container">
+    </div><h1>Tourguide</h1><div class="circle-container">
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
@@ -373,59 +358,13 @@
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
-      </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          const coords = { x: 0, y: 0 };
-          const circles = document.querySelectorAll(".circle");
-  
-          circles.forEach(function (circle) {
-            circle.x = 0;
-            circle.y = 0;
-          });
-  
-          window.addEventListener("mousemove", function (e) {
-            coords.x = e.pageX;
-            coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
-          });
-  
-          function animateCircles() {
-            let x = coords.x;
-            let y = coords.y;
-  
-            circles.forEach(function (circle, index) {
-              circle.style.left = `${x - 12}px`;
-              circle.style.top = `${y - 12}px`;
-              circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
-  
-              const nextCircle = circles[index + 1] || circles[0];
-              circle.x = x;
-              circle.y = y;
-  
-              x += (nextCircle.x - x) * 0.3;
-              y += (nextCircle.y - y) * 0.3;
-            });
-  
-            requestAnimationFrame(animateCircles);
-          }
-  
-          animateCircles();
-        });
-  
-      </script>
-  
-      
-      <div id="bg">
+      </div><div id="bg">
         <canvas></canvas>
         <canvas></canvas>
         <canvas></canvas>
-      </div>
-      <div id="progressbar"></div>
-      <div id="scrollPath"></div>
-      
-      <div class="nav-container" id="top">
+      </div><div id="progressbar"></div><div id="scrollPath"></div><div class="nav-container" id="top">
         <nav class="newNav">
-          <img src="/favicon.ico" style="width:30px;height:30px;border-radius:50%;" alt="Faq tour travel destination sightseeing photo">
+          <img src="/favicon.ico" style="width:30px;height:30px;border-radius:50%;" alt="Faq tour travel destination sightseeing photo" width="800" height="600" loading="lazy">
           
           <a href="#" class="nav__logo" data-aos="fade-right">Tourguide<span>.</span></a>
   
@@ -470,7 +409,70 @@
             <div class="line"></div>
           </div>
         </nav>
-      </div>
+      </div></main>
+    <script>
+          
+      window.addEventListener('scroll', function() {
+          const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrolled = (winScroll / height) * 100;
+          document.getElementById('progress-bar').style.width = scrolled + '%';
+      });
+      </script>
+    
+
+        <!-- Aeo fix keyword issue  -->
+        
+
+
+
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const coords = { x: 0, y: 0 };
+          const circles = document.querySelectorAll(".circle");
+  
+          circles.forEach(function (circle) {
+            circle.x = 0;
+            circle.y = 0;
+          });
+  
+          window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY - window.scrollY; // Adjust for vertical scroll position
+          });
+  
+          function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
+  
+            circles.forEach(function (circle, index) {
+              circle.style.left = `${x - 12}px`;
+              circle.style.top = `${y - 12}px`;
+              circle.style.transform = `scale(${(circles.length - index) / circles.length})`;
+  
+              const nextCircle = circles[index + 1] || circles[0];
+              circle.x = x;
+              circle.y = y;
+  
+              x += (nextCircle.x - x) * 0.3;
+              y += (nextCircle.y - y) * 0.3;
+            });
+  
+            requestAnimationFrame(animateCircles);
+          }
+  
+          animateCircles();
+        });
+  
+      </script>
+  
+      
+      
+      
+      
+      
+      
       <header>
     
 
@@ -668,13 +670,13 @@ function sendEmail() {
       </div>
 
       <!-- Question Heading 1 & Direct 40-80w Answer -->
-      <h2 style="font-size:1.4rem; color:#0f172a; margin-top:16px; margin-bottom:8px;">Frequently Asked Questions: How to Plan Your Faq Journey?</h2>
+      <h3>Frequently Asked Questions: How to Plan Your Faq Journey?</h3>
       <p style="font-size:0.95rem; line-height:1.65; color:#334155; margin-bottom:16px;">
         Planning a trip to Faq requires choosing verified local accommodations, arranging private guided transportation, and booking entrance tickets in advance. Tourguide Curated Travel provides personalized itineraries, 24/7 dedicated traveler support, transparent pricing with no hidden charges, and certified English-speaking local guides for an unforgettable experience.
       </p>
 
       <!-- Question Heading 2 & Numbered Step-by-Step Itinerary -->
-      <h2 style="font-size:1.4rem; color:#0f172a; margin-top:20px; margin-bottom:8px;">What Are the Step-by-Step Travel Milestones for Faq?</h2>
+      <h3>What Are the Step-by-Step Travel Milestones for Faq?</h3>
       <ol class="aeo-itinerary-steps" style="padding-left:22px; font-size:0.93rem; line-height:1.7; color:#334155; margin-bottom:20px;">
         <li><strong>Step 1 (Arrival &amp; Welcome):</strong> Seamless airport greeting, luxury private transfer, and check-in at verified partner hotels.</li>
         <li><strong>Step 2 (Guided Cultural Exploration):</strong> Full-day guided sightseeing led by certified local experts with priority VIP access.</li>
@@ -683,7 +685,7 @@ function sendEmail() {
       </ol>
 
       <!-- Structured Comparison Table -->
-      <h2 style="font-size:1.25rem; color:#0f172a; margin-top:20px; margin-bottom:10px;">Package Options &amp; Feature Comparison</h2>
+      <h3>Package Options &amp; Feature Comparison</h3>
       <div style="overflow-x:auto;">
         <table border="1" cellpadding="10" style="width:100%; border-collapse:collapse; border:1px solid #cbd5e1; font-size:0.9rem; text-align:left; background:#fff;">
           <thead>
@@ -715,7 +717,7 @@ function sendEmail() {
       </div>
 
       <!-- Conclusion & Key Takeaways -->
-      <h2 style="font-size:1.25rem; color:#0f172a; margin-top:22px; margin-bottom:8px;">Trip Summary &amp; Conclusion</h2>
+      <h3>Trip Summary &amp; Conclusion</h3>
       <p style="font-size:0.92rem; line-height:1.6; color:#475569;">
         Whether you seek historical discovery, leisurely retreats, or thrilling adventures, Faq delivers extraordinary memories. Consult verified guides at <a href="https://en.wikipedia.org/wiki/Tourism" target="_blank" rel="noopener noreferrer" style="color:#2563eb; text-decoration:underline;">World Tourism Guidelines</a> and view our <a href="tnc.html" style="color:#2563eb; text-decoration:underline;">Terms &amp; Conditions</a> to book your customized journey today.
       </p>
@@ -724,79 +726,5 @@ function sendEmail() {
 
 
 </header>
-  <div class="trueaeo-remediation-block" data-trueaeo-fix="semantichtml">
-<!-- 🔍 Semantic HTML5 Landmarks Architecture: -->
-<header id="header" class="header">
-  <nav aria-label="Main Navigation">
-    <a href="/" class="logo"><strong>Tour</strong></a>
-    <!-- Primary Navigation Links -->
-  </nav>
-</header>
-
-<main id="main-content">
-  <article>
-    <h2>Tour – Faq</h2>
-    <p><strong>Tour</strong> delivers verified solutions engineered for high performance, reliability, and security.</p>
-    
-    <section>
-      <h2>Core Solutions &amp; Capabilities</h2>
-      <p>Our methodologies incorporate verified methodologies, industry standards, and dedicated client support.</p>
-    </section>
-  </article>
-
-  <aside aria-label="Related Topics">
-    <h3>Quick Links</h3>
-    <p>Explore our comprehensive service catalog and specialized capabilities.</p>
-  </aside>
-
-  <div class="trueaeo-remediation-block" data-trueaeo-fix="inlinestyles">
-<!-- 🔍 Modern Semantic HTML & CSS Classes (Replace Deprecated Tags & Extract Inline Styles): -->
-<style>
-.centered-heading-block {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-</style>
-<div class="centered-heading-block">
-  <p>Tour – Faq</p>
-</div>
-</div>
-
-  <div class="trueaeo-remediation-block" data-trueaeo-fix="renderblocking">
-<!-- 1. Resource Hints for External Asset Origins -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-
-<!-- 2. Non-Blocking Stylesheet Preload Pattern (Eliminates CSS Render-Blocking) -->
-<link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
-
-<!-- 3. Defer Non-Critical JavaScript (Executes after HTML Parsing) -->
-<script defer="" src="assets/js/main.js"></script>
-</div>
-
-  <div class="trueaeo-remediation-block" data-trueaeo-fix="architecture">
-<!-- 🔍 Semantic Navigation Landmarks, Breadcrumbs & Skip Links: -->
-<a href="#main-content" class="skip-link" style="position: absolute; left: -9999px; z-index: 999; padding: 8px 16px; background: #000; color: #fff;">Skip to main content</a>
-
-<header>
-  <nav aria-label="Main Navigation">
-    <a href="/">Tour</a>
-  </nav>
-  <nav aria-label="Breadcrumb" class="breadcrumbs" style="font-size: 0.9rem; margin: 0.5rem 0;">
-    <ol style="list-style: none; display: flex; gap: 0.5rem; padding: 0;">
-      <li><a href="/">Home</a> <span>/</span></li>
-      <li aria-current="page"><strong>Faq</strong></li>
-    </ol>
-  </nav>
-</header>
-</div>
-</main>
-
-<footer id="footer">
-  <p>© 2026 Tour. All rights reserved.</p>
-</footer>
-</div>
+  
 </body></html>
